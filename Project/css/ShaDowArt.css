@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 1000;
+    background-color: transparent;
+    padding: 1.5rem 7%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .nav__logo{
+    position: relative;
+    font-size: 33px;
+    color: #000;
+    font-weight: 600;
+}
+.header .nav__item{
+    float: right;
+    margin-right: 30px;
+}
+.header .nav__item .nav__list{
+    display: inline-block;
+}
+.header .nav .nav__item .nav__list a{
+    color: #000;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+}
+.header .nav .nav__item .nav__list a:hover{
+    color: #23dbdb;
+}
+.header .nav .nav__item ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    background-color: rgb(68, 85, 100);
+}
+.header .nav .nav__item ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+}
+.header .nav .nav__item ul li a{
+    line-height: 50px;
+}
+.header .nav .nav__item ul ul{
+    border-top: none;
+}
+.header .nav .nav__item ul ul li{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.header .nav .nav__item ul li a li{
+    margin-left: 45px;
+}
+
+
